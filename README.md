@@ -34,9 +34,7 @@ Consider a lending protocol with $N$ borrowing positions. Each position $i$ has:
 So far this is just accounting. The physics enters through the **interactions**. When position $i$ gets liquidated, its collateral is sold into shared liquidity pools, creating price impact that affects every other position holding correlated collateral. Define $J_{ij}$ as the coupling between positions $i$ and $j$ — the magnitude of the price impact that liquidating $i$ exerts on $j$'s health factor.
 
 The system's total "energy" — or more precisely, its aggregate distress functional — can be written as:
-
 $$H(\{s_i\}) = -\sum_{i<j} J_{ij}\, s_i\, s_j \;-\; \sum_i h_i\, s_i$$
-
 where $h_i = c_i - \theta_i$ is the **local field**: how far position $i$ is from its liquidation threshold, independent of other positions. When $h_i > 0$, position $i$ is healthy; when $h_i < 0$, it's underwater.
 
 This is the Hamiltonian of a disordered magnetic system. The first term captures position-to-position coupling through shared liquidity; the second captures each position's intrinsic health. The system's ground state — its lowest-energy configuration — corresponds to the "final state" after all cascades have resolved.
