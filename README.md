@@ -165,7 +165,7 @@ This is one application of a broader framework. In follow-up articles:
 - **Protocol Stability as Hopfield Memory Capacity**: A stablecoin "remembers" its peg through economic incentives. But like a Hopfield network, it has spurious states (depegs, death spirals) and capacity limits — the ratio of economic intents to validator capacity has a critical threshold analogous to $\alpha_c = 0.138$ in the Hopfield model.
 - **Formal Verification**: If DeFi is a spin glass, how do we *prove* that a protocol avoids the dangerous metastable states? This is where Lean 4 formalization enters — verifying economic safety properties with the same rigor applied to mathematical theorems.
 
-The companion GitHub repository with the full derivations, simulation code, and data analysis is here: [link].
+The companion GitHub repository with the full derivations, simulation code, and data analysis is here: [GitHub Repo](https://github.com/NicolaBernini/spin-glass-defi-stETH-2022-depeg-analysis).
 
 ---
 
